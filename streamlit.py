@@ -195,8 +195,8 @@ test_ds = image_dataset_from_directory(
     image_size=image_size
 )
 
-
-model = load_model("./modelSaved/layermodel.tf")
+file_path = os.path.abspath('./modelSaved/layermodel.tf')
+model = tf.keras.models.load_model("./modelSaved/layermodel.tf")
 
 
 
