@@ -25,7 +25,6 @@ import seaborn as sns
 import streamlit as st
 import os
 import random
-from PIL import Image
 
 def display_image(category):
     # Set the path to your image folder
