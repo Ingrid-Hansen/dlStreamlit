@@ -164,7 +164,7 @@ validation_split = 0.2
 
 # Create the training dataset from the 'train' directory
 train_ds = image_dataset_from_directory(
-    directory='images/training_set',
+    directory='./images/training_set',
     labels='inferred',
     label_mode='categorical',
     batch_size=batch_size,
@@ -176,7 +176,7 @@ train_ds = image_dataset_from_directory(
 
 # Create the validation dataset from the 'train' directory
 validation_ds = image_dataset_from_directory(
-    directory='images/training_set',
+    directory='./images/training_set',
     labels='inferred',
     label_mode='categorical',
     batch_size=batch_size,
@@ -188,7 +188,7 @@ validation_ds = image_dataset_from_directory(
 
 # Create the testing dataset from the 'test' directory
 test_ds = image_dataset_from_directory(
-    directory='images/test_set',
+    directory='./images/test_set',
     labels='inferred',
     label_mode='categorical',
     batch_size=batch_size,
@@ -196,7 +196,7 @@ test_ds = image_dataset_from_directory(
 )
 
 
-model = load_model("modelSaved/layermodel.tf")
+model = load_model("./modelSaved/layermodel.tf")
 
 
 
@@ -209,7 +209,7 @@ epoch_nr = f"{selected_number:02d}"
 # Display the formatted number
 
 
-model.load_weights(f"saved_models/checkpoints/layertest/weights_{epoch_nr}.tf")
+model.load_weights(f"./saved_models/checkpoints/layertest/weights_{epoch_nr}.tf")
 
 
 
