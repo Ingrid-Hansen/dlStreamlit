@@ -140,7 +140,7 @@ def image_display():
         st.image(display_image('forest'), caption=image_captions['forest'], use_column_width=True)
         st.image(display_image('city'), caption=image_captions['city'], use_column_width=True)
 
-st.markdown("Due to a bug in streamlit the images will duplicate in number after clicking refresh.")
+st.markdown("Due to a bug in streamlit the images will duplicate in number after clicking refresh. This will happen only once.")
 image_display()
 if st.button("Refresh Images"):
     col1.empty()  # Clear the first column
